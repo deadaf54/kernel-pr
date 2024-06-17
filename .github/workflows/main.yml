@@ -14,8 +14,8 @@ jobs:
       - name: Run issue creation script
         env:
           SECRET_ID: ${{ secrets.SECRET_ID }}
-          OWNER: "deadaf54"
-          REPO: "MiCode/Xiaomi_Kernel_OpenSource"
+          OWNER: "MiCode"
+          REPO: "Xiaomi_Kernel_OpenSource"
           TITLE: "Release Redmi note 9 (Merlin) , Redmi 9 (Lancelot) and Poco M2 (Shiva) S Kernel Source "
           BODY: "It's been almost a year since the release of MIUI S for the following devices, but Xiaomi (violating GPL license) still hasn't released the S kernel source code"
           NUM_ISSUES: 1000
