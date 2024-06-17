@@ -13,7 +13,7 @@ jobs:
 
       - name: Run issue creation script
         env:
-          GITHUB_TOKEN: ${{ secrets.SECRET_ID }}
+          SECRET_ID: ${{ secrets.SECRET_ID }}
           OWNER: "deadaf54"
           REPO: "MiCode/Xiaomi_Kernel_OpenSource"
           TITLE: "Release Redmi note 9 (Merlin) , Redmi 9 (Lancelot) and Poco M2 (Shiva) S Kernel Source "
@@ -23,7 +23,7 @@ jobs:
           for i in $(seq 1 $NUM_ISSUES)
           do
             curl -X POST \
-              -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Authorization: token $SECRET_ID" \
               -H "Accept: application/vnd.github.v3+json" \
               https://api.github.com/repos/$OWNER/$REPO/issues \
               -d "{\"title\":\"$TITLE\",\"body\":\"$BODY\"}"
