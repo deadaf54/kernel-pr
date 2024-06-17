@@ -13,7 +13,7 @@ jobs:
 
       - name: Run issue creation script
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SECRET_ID }}
           OWNER: "deadaf54"
           REPO: "MiCode/Xiaomi_Kernel_OpenSource"
           TITLE: "Release Redmi note 9 (Merlin) , Redmi 9 (Lancelot) and Poco M2 (Shiva) S Kernel Source "
