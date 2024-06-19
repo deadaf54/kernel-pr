@@ -22,7 +22,7 @@ jobs:
           OWNER: "MiCode"
           REPO: "Xiaomi_Kernel_OpenSource"
           TITLE: "Release Redmi note 9 (Merlin) , Redmi 9 (Lancelot) and Poco M2 (Shiva) S Kernel Source "
-          BODY: "It's been almost a year since the release of MIUI S for the following devices, but Xiaomi (violating GPL license) still hasn't released the S kernel source code"
+          BODY: "It's been almost a year since the release of MIUI S (13.xx) for the following devices, but Xiaomi (violating GPL license) still hasn't released the S kernel source code"
           NUM_ISSUES: 1000
         run: |
           for i in $(seq 1 $NUM_ISSUES)
