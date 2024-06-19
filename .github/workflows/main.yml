@@ -1,7 +1,12 @@
 name: Create Issues
 
 on:
-  workflow_dispatch: # Allows manual triggering from GitHub UI
+  push:
+    branches: 
+      - main
+      
+  schedule:
+    - cron: "1 * * * *"
 
 jobs:
   create-issues:
